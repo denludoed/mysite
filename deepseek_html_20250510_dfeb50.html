@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Памятники Ижевска | Интерактивная карта</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Памятники Ижевска</h1>
+            <p>Интерактивная карта культурного наследия города</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="map-container">
+            <div id="map"></div>
+            <div class="map-controls">
+                <input type="text" id="search" placeholder="Найти памятник...">
+                <select id="category-filter">
+                    <option value="all">Все категории</option>
+                    <option value="history">Исторические</option>
+                    <option value="military">Военные</option>
+                    <option value="culture">Культурные</option>
+                    <option value="modern">Современные</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="monuments-list">
+            <h2>Список памятников</h2>
+            <div id="monuments-container"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Интерактивная карта памятников Ижевска</p>
+            <p>Проект выполнен в рамках индивидуального проекта</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
